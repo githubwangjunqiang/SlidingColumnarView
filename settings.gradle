@@ -1,0 +1,3 @@
+rootProject.name='SlidingColumnarView'
+include ':app'
+include ':slidingcolumnar'
