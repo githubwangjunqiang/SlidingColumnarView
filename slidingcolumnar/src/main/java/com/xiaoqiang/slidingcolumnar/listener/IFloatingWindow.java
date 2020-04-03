@@ -1,6 +1,8 @@
-package com.xiaoqiang.slidingcolumnar;
+package com.xiaoqiang.slidingcolumnar.listener;
 
 import android.graphics.Canvas;
+
+import com.xiaoqiang.slidingcolumnar.entity.StepsTableData;
 
 public interface IFloatingWindow {
     /**

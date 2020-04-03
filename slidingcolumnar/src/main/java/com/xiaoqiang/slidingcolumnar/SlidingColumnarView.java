@@ -13,6 +13,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.xiaoqiang.slidingcolumnar.entity.BottomTableData;
+import com.xiaoqiang.slidingcolumnar.entity.StepsTableData;
+import com.xiaoqiang.slidingcolumnar.listener.IFloatingWindow;
+import com.xiaoqiang.slidingcolumnar.listener.ISlidingColumnar;
+
 import java.util.List;
 
 /**
@@ -78,6 +83,10 @@ public class SlidingColumnarView extends View implements ISlidingColumnar {
     private float downX, downY;
 
     private IFloatingWindow mFloatingWindow;
+
+    public IFloatingWindow getFloatingWindow() {
+        return mFloatingWindow;
+    }
 
     public SlidingColumnarView(Context context) {
         this(context, null);

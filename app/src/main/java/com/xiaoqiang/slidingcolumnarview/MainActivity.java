@@ -6,9 +6,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
 
-import com.xiaoqiang.slidingcolumnar.BottomTableData;
+import com.xiaoqiang.slidingcolumnar.entity.BottomTableData;
 import com.xiaoqiang.slidingcolumnar.SlidingColumnarView;
-import com.xiaoqiang.slidingcolumnar.StepsTableData;
+import com.xiaoqiang.slidingcolumnar.entity.StepsTableData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mFormLineView = findViewById(R.id.fview);
+
+
 
 
         List<BottomTableData> mStepNumberData = new ArrayList<>();

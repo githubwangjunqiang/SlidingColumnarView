@@ -9,6 +9,11 @@ import android.graphics.RectF;
 import android.text.TextUtils;
 import android.util.TypedValue;
 
+import com.xiaoqiang.slidingcolumnar.entity.BottomTableData;
+import com.xiaoqiang.slidingcolumnar.entity.StepsTableData;
+import com.xiaoqiang.slidingcolumnar.listener.IFloatingWindow;
+import com.xiaoqiang.slidingcolumnar.listener.ISlidingColumnar;
+
 import java.util.List;
 
 public class FloatingWindow implements IFloatingWindow {
