@@ -17,7 +17,7 @@ Android 小强 编写的简单柱状图 有兴趣的同学 可以参考学习  �
   Step 2. Add the dependency
 
   	dependencies {
-  	        implementation 'com.github.githubwangjunqiang:SlidingColumnarView:v1.0'
+  	         implementation 'com.github.githubwangjunqiang:SlidingColumnarView:v1.2'
   	}
 
 2、xml 中引用
@@ -187,3 +187,40 @@ Android 小强 编写的简单柱状图 有兴趣的同学 可以参考学习  �
               *日期字体大小 柱状图底部
               */
              private float textSize;
+
+
+6、SlidingColumnarView 本身还可以设置 其他边距等参数 设置完成 重绘即可
+
+     /**
+         * 表格 底部边距
+         */
+        private float bottomTablePadding;
+        /**
+         * 表格 左边距
+         */
+        private float leftTablePadding;
+        /**
+         * 表格 右边距  控件右边距
+         */
+        private float riteTablePadding;
+        /**
+         * 表格 间距
+         */
+        private float tableBottomInterval;
+        /**
+         * 日期 步数 左边距
+         */
+        private float leftStepPadding;
+        /**
+         * 日期 间距
+         */
+        private float stepSpacing;
+        /**
+         * 时间 柱状 宽度
+         */
+        private float mStepWidth;
+
+        /**
+         * 日期文字 与 柱状图 间距
+         */
+        private float mStepTextTopPadding;

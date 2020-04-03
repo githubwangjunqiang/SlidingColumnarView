@@ -43,23 +43,6 @@ public class SlidingColumnarView extends View implements ISlidingColumnar {
      */
     private float tableBottomInterval;
     /**
-     * 表格对象
-     */
-    private List<BottomTableData> mBottomTableData;
-    /**
-     * 步数 日期对象
-     */
-    private List<StepsTableData> mStepsTableData;
-    /**
-     * 底部 表格 画笔
-     */
-    private Paint mPaintBack;
-
-    /**
-     * 步数 柱状图 画笔
-     */
-    private Paint mPaintStep;
-    /**
      * 日期 步数 左边距
      */
     private float leftStepPadding;
@@ -76,6 +59,24 @@ public class SlidingColumnarView extends View implements ISlidingColumnar {
      * 日期文字 与 柱状图 间距
      */
     private float mStepTextTopPadding;
+    /**
+     * 表格对象
+     */
+    private List<BottomTableData> mBottomTableData;
+    /**
+     * 步数 日期对象
+     */
+    private List<StepsTableData> mStepsTableData;
+    /**
+     * 底部 表格 画笔
+     */
+    private Paint mPaintBack;
+
+    /**
+     * 步数 柱状图 画笔
+     */
+    private Paint mPaintStep;
+
 
     /**
      * 用户点击的 xy
