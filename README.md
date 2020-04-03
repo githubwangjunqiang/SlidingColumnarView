@@ -4,7 +4,7 @@ Android 小强 编写的简单柱状图 有兴趣的同学 可以参考学习  �
 数据横向可以滑动
 
 
-[Image](https://raw.githubusercontent.com/githubwangjunqiang/SlidingColumnarView/master/img/Z8SQ86%5BDZ((B%5BDH%60%5D)5)YYB.png)
+![image](https://raw.githubusercontent.com/githubwangjunqiang/SlidingColumnarView/master/img/Z8SQ86%5BDZ((B%5BDH%60%5D)5)YYB.png)
 
 1、Add it in your root build.gradle at the end of repositories:
 
