@@ -386,40 +386,6 @@ public class SlidingColumnarView extends View implements ISlidingColumnar {
     }
 
 
-    @Override
-    public boolean detectionEvent(MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            downX = event.getX();
-            downY = event.getY();
-            return true;
-        }
-        if (event.getAction() == MotionEvent.ACTION_MOVE) {
-            if (Math.abs(Math.abs(event.getX()) - Math.abs(downX)) > 20) {
-                return false;
-            }
-            if (Math.abs(Math.abs(event.getY()) - Math.abs(downY)) > 20) {
-                return false;
-            }
-            return true;
-        }
-        if (event.getAction() == MotionEvent.ACTION_UP) {
-
-            List<StepsTableData> stepTimeData = getStepsTableData();
-            if (stepTimeData != null) {
-
-                for (int i = 0; i < stepTimeData.size(); i++) {
-                    StepsTableData data = stepTimeData.get(i);
-                    if (data.onClick(downX, downY, tableBottomInterval / 2)) {
-                        generateFloatingWindowData(data);
-                        break;
-                    }
-                }
-            }
-            return true;
-        }
-
-        return false;
-    }
 
 
     @Override

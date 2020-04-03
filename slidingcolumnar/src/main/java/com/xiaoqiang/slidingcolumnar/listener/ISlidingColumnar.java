@@ -90,13 +90,6 @@ public interface ISlidingColumnar {
     void drawStepsTableData(Canvas canvas, Paint paint, List<StepsTableData> stepsTableData);
 
 
-    /**
-     * 检测事件
-     *
-     * @param event
-     * @return 如果 处理此事件 返回true 不处理 返回 false
-     */
-    boolean detectionEvent(MotionEvent event);
 
     /**
      * 设置 当前选中 事件
